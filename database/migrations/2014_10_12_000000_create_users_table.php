@@ -31,6 +31,8 @@ return new class extends Migration
             $table->text('objectives');
             $table->foreignId('agente_id')->nullable()->references('id')->on('users');
             $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('last_login_at')->nullable();
+            $table->text('last_login_ip')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

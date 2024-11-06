@@ -29,7 +29,7 @@
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
-                   value="{{ old('email') }}" placeholder="{{ __('adminlte::adminlte.email') }}" autofocus
+                   value="admin@gmail.com" placeholder="{{ __('adminlte::adminlte.email') }}" autofocus
                    style="border: 1px solid #d7dbdd; border-radius: 2px 4px 4px 2px;">
 
             @error('email')
@@ -44,8 +44,8 @@
             <div class="input-group-prepend" style="border: 1px solid #d7dbdd; border-radius: 4px;">
                 <span class="input-group-text"><i class="fas fa-unlock"></i></span>
             </div>
-            <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
-                   placeholder="Contraseña" style="border: 1px solid #d7dbdd; border-radius: 2px 4px 4px 2px;">
+            <input type="password" name="password" class="form-control  @error('password') is-invalid @enderror"
+                   placeholder="Contraseña" value="12345678" style="border: 1px solid #d7dbdd; border-radius: 2px 4px 4px 2px;">
             @error('password')
             <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
